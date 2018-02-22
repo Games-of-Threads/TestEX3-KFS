@@ -50,23 +50,17 @@ public Object remove(int index) // Removes object at index position
 // returns a reference to removed object   
 // Throws IndexOutOfBoundsException   
 ```
-1.   
-Make a state diagram that depicts the states of MyArrayListWithBugs.java and shows the events   
+1. Make a state diagram that depicts the states of MyArrayListWithBugs.java and shows the events   
 that cause a change from one state to another (i.e. a transition).   
-2.   
-Derive test cases from the state diagram.   
-3.   
-Implement automated unit tests using the test cases above.   
-4.   
-Detect, locate (and document) and fix as many errors as possible in the class.   
+2. Derive test cases from the state diagram.   
+3. Implement automated unit tests using the test cases above.   
+4. Detect, locate (and document) and fix as many errors as possible in the class.   
 a. Define (more) relevant test cases applying black box and white box techniques   
 b. Use xUnit to implement and run the same tests cases again after fixing   
 c. Study the implementation (code)   
 d. Use debugger to locate errors   
-5.   
-Consider whether a state table is more useful design technique. Comment on that.   
-6.   
-Make a conclusion where you specify the level of test coverage and argue for your chosen level:   
+5. Consider whether a state table is more useful design technique. Comment on that.   
+6. Make a conclusion where you specify the level of test coverage and argue for your chosen level:   
  Percentage of states visited   
  Percentage of transitions exercised   
 Formalities   

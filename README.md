@@ -4,54 +4,39 @@
 this paper is the response to the assignment in the test cause stated [here](https://github.com/datsoftlyngby/soft2018spring-test-teaching-material/blob/master/exercises/Test%20Case%20Exercises.pdf) with the use of these [slides](https://github.com/datsoftlyngby/soft2018spring-test-teaching-material/blob/master/slides/Test%20Design%20Techniques.pdf)
 
 ## Equivalence classes
-1. Make equivalences classes for the input variable for this method:
-```
-public boolean isEven(int n)
-```
-2. Make equivalences classes for an input variable that represents a mortgage applicant’s salary. The valid
-range is $1000 pr. month to $75,000 pr. month
+1. The table looks as follows.   
+![](https://i.gyazo.com/93b5525a2555c77c6747da4e18555184.png)   
 
-3. Make equivalences classes for the input variables for this method:
-public static int getNumDaysinMonth(int month, int year)
+2. The table looks as follows.   
+![](https://i.gyazo.com/eee5bf1f42e8fc0d01aab01bcdfc4a07.png)   
+
+3. The table looks as follows.   
+![](https://i.gyazo.com/9a70386a722ce6641f5b92bde78fcd74.png)   
 
 ## Boundary Analysis
-1. Do boundary value analysis for input values exercise 1
-2. Do boundary value analysis for input values exercise 2
-3. Do boundary value analysis for input values exercise 3
-## Decision tables
-1. Make a decision table for the following business case:   
-No charges are reimbursed (DK: refunderet) to a patient until the deductible (DK: selvrisiko) has been
-met. After the deductible has been met, reimburse 50% for Doctor's Office visits or 80% for Hospital
-visits.   
-Conditions   
-Actions   
+1. The table looks as follows.   
+![](https://i.gyazo.com/43faec8a6a5e08db7b88cee4bce226b3.png)   
 
-2. Make a decision table for leap years.   
-Leap year: Most years that are evenly divisible by 4 are leap years.   
-An exception to this rule is that years that are evenly divisible by 100 are not leap years, unless they are also
-evenly divisible by 400, in which case they are leap years.   
-Conditions   
-Actions   
+2. The table looks as follows.   
+![](https://i.gyazo.com/13d162a1a683898ffc4250db3af6f8a1.png)   
+
+3. The table looks as follows.   
+![](https://i.gyazo.com/d7bf18c6208e8fa8b7707f9cf35870d4.png)   
+
+## Decision tables
+1. Table looks like this.   
+![](https://i.gyazo.com/8dc91dfbc4605b46f1ca799b23452fa9.png)   
+
+2. Table looks like this.   
+![](https://i.gyazo.com/4b0a68585817ede34a25b638d4029ef0.png)
+
 ## State transition
-State transition testing is another black box test design technique where test cases are designed to execute
-valid and invalid transitions.   
-Use this technique to test the class MyArrayListWithBugs.java(find code on last page). It is a list
-class implementation (with defects) with the following methods:   
-Method Specification   
-```
-public MyArrayListWithBugs () // Creates new empty list   
-public void add(Object o) // Inserts object in the end of list   
-public int size() // Returns number of objects in list   
-public Object get(int index) // Returns reference to object at position   
-index // Throws IndexOutOfBoundsException   
-public void add(int index, Object e) // Inserts object at index position   
-// Throws IndexOutOfBoundsException   
-public Object remove(int index) // Removes object at index position   
-// returns a reference to removed object   
-// Throws IndexOutOfBoundsException   
-```
-1. Make a state diagram that depicts the states of MyArrayListWithBugs.java and shows the events   
-that cause a change from one state to another (i.e. a transition).   
+1. State Diagram looks as follows.   
+![](https://i.gyazo.com/e3bd4d547074f7548f51db61f6f8e856.png)   
+
+Bonus state table looks as follows.   
+![](https://i.gyazo.com/7f374133d32e31073ce59958e678fc02.png)
+
 2. Derive test cases from the state diagram.   
 3. Implement automated unit tests using the test cases above.   
 4. Detect, locate (and document) and fix as many errors as possible in the class.   

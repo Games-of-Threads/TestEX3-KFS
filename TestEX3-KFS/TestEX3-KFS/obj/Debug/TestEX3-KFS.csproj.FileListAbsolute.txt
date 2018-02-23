@@ -5,3 +5,10 @@ C:\Users\Retro\Git\TestEX3-KFS\TestEX3-KFS\TestEX3-KFS\obj\Debug\TestEX3-KFS.csp
 C:\Users\Retro\Git\TestEX3-KFS\TestEX3-KFS\TestEX3-KFS\obj\Debug\TestEX3-KFS.csproj.CoreCompileInputs.cache
 C:\Users\Retro\Git\TestEX3-KFS\TestEX3-KFS\TestEX3-KFS\obj\Debug\TestEX3-KFS.exe
 C:\Users\Retro\Git\TestEX3-KFS\TestEX3-KFS\TestEX3-KFS\obj\Debug\TestEX3-KFS.pdb
+C:\Users\Animc\Desktop\Repos\TestEX3-KFS\TestEX3-KFS\TestEX3-KFS\bin\Debug\TestEX3-KFS.exe.config
+C:\Users\Animc\Desktop\Repos\TestEX3-KFS\TestEX3-KFS\TestEX3-KFS\bin\Debug\TestEX3-KFS.exe
+C:\Users\Animc\Desktop\Repos\TestEX3-KFS\TestEX3-KFS\TestEX3-KFS\bin\Debug\TestEX3-KFS.pdb
+C:\Users\Animc\Desktop\Repos\TestEX3-KFS\TestEX3-KFS\TestEX3-KFS\obj\Debug\TestEX3-KFS.csprojResolveAssemblyReference.cache
+C:\Users\Animc\Desktop\Repos\TestEX3-KFS\TestEX3-KFS\TestEX3-KFS\obj\Debug\TestEX3-KFS.csproj.CoreCompileInputs.cache
+C:\Users\Animc\Desktop\Repos\TestEX3-KFS\TestEX3-KFS\TestEX3-KFS\obj\Debug\TestEX3-KFS.exe
+C:\Users\Animc\Desktop\Repos\TestEX3-KFS\TestEX3-KFS\TestEX3-KFS\obj\Debug\TestEX3-KFS.pdb

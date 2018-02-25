@@ -46,8 +46,7 @@ test code looks as follows.
 ![](https://i.gyazo.com/5180c4fdda2582722803869b56e445a7.png)   
 ![](https://i.gyazo.com/1972f9b69948409e7456828837da8c45.png)   
 
-4. Detect, locate (and document) and fix as many errors as possible in the class.   
-The first failed test as shown below fails on the last Assert line.   
+4. The first failed test as shown below fails on the last Assert line.   
 ![](https://i.gyazo.com/19da23826626e690205dbe8643097114.png)   
 which means the object returned from array.get(1) doesn't exist, either it's 0 based index or other factor have a play in this.   
 the code shown below doesn't clerify this, but from the exception func it can be seen 0 and below is a invalid input, so it can be assumed it's not 0 index based, however the list is a Object array, so it's possible the Get function has a error in the return command.   
@@ -92,14 +91,23 @@ is rather troublesome as for me to develop, since asserting throw exceptions wer
 ![](https://i.gyazo.com/c7618ffaf3646d30bec2747edffc70f5.png)   
 after this modification the test shows green and thats all current testing working correctly, however from additional looks over the confusing index system, makes it clear that many there can be many more test case issues in this code, likewise remove at index havn't been tested yet so that is the next step from here.   
 ![](https://i.gyazo.com/83cb16f1b8a275cf653980de2d1bf9b8.png)   
-the test goes as follows, add 3, ensure size is 3, remove third element from list, ensure size is 2, remove first element, ensure size is 1, get the remaining element and assert it's not null.
+the test goes as follows, add 3, ensure size is 3, remove third element from list, ensure size is 2, remove first element, ensure size is 1, get the remaining element and assert it's not null.   
+first test case reveals the first error.   
+![](https://i.gyazo.com/dc0eb33f4459c66c6fc5841193ec81d6.png)   
+the code that results in this exception looks like this.
+```
+if (index < 0 || nextFree <= index)
+                throw new IndexOutOfRangeException("Error (remove): Invalid index"
+               + index);
+```
+for some reason, the code implies that if you try to remove a object at the nextFree or above your selecting something that doesn't exist, which means some of my code might have been false positiv, as the size() function gets the right size value wise, but it returns nextFree which seems to be indicated here as "next free spot in the array". from this reveal it can be judged that some functions aren't working as they should, and the index value for alot of functions are in turmoil.   
+although it's better to do a full review with the coder, timewise I choose to mirror the functionality of the add at index function, so instead of nextFree <= index, we remove the equal sign to keep parity in the code.   
 
+this simple change have fixed all issues in the function.
+ 
+5. I made both the table and the diagram, yet doing my development of test cases and implementation I exclusively used the table, though this isn't a indication of whats better as the program was rather enclosed meaning almost all functionality was connected to the same state "State 2".   
+I think once the system gets larger the diagram is much better to get the details about any single state, while the table would grow exponentially, making it harder and harder unless you made smaller tables somehow.   
 
-a. Define (more) relevant test cases applying black box and white box techniques   
-b. Use xUnit to implement and run the same tests cases again after fixing   
-c. Study the implementation (code)   
-d. Use debugger to locate errors   
-5. Consider whether a state table is more useful design technique. Comment on that.   
 6. Make a conclusion where you specify the level of test coverage and argue for your chosen level:   
  Percentage of states visited   
  Percentage of transitions exercised   

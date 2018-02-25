@@ -40,14 +40,28 @@ Bonus state table looks as follows.
 2. table looks like this.   
 ![](https://i.gyazo.com/f60801f4c59567e490a4d0b137f8c29a.png)   
 
-3. Implement automated unit tests using the test cases above.   
-first test results with the following code gave these results.   
+3. The test results with the following code gave these results.   
 ![](https://i.gyazo.com/1aa06df757d51bcc8328ed02cafcb4ac.png)   
 test code looks as follows.   
-![](https://i.gyazo.com/4fff5913381631bd4025253116a4e612.png)   
+![](https://i.gyazo.com/5180c4fdda2582722803869b56e445a7.png)   
 ![](https://i.gyazo.com/1972f9b69948409e7456828837da8c45.png)   
 
 4. Detect, locate (and document) and fix as many errors as possible in the class.   
+The first failed test as shown below fails on the last Assert line.   
+![](https://i.gyazo.com/19da23826626e690205dbe8643097114.png)   
+which means the object returned from array.get(1) doesn't exist, either it's 0 based index or other factor have a play in this.   
+the code shown below doesn't clerify this, but from the exception func it can be seen 0 and below is a invalid input, so it can be assumed it's not 0 index based, however the list is a Object array, so it's possible the Get function has a error in the return command.   
+![](https://i.gyazo.com/71212cd097866fae01f52df93ccba8d6.png)   
+after changing the line
+```
+return list[index];
+```
+to
+```
+return list[index - 1];
+```
+have solved the issue currently.   
+
 a. Define (more) relevant test cases applying black box and white box techniques   
 b. Use xUnit to implement and run the same tests cases again after fixing   
 c. Study the implementation (code)   

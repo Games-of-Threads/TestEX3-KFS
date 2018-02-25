@@ -41,6 +41,12 @@ Bonus state table looks as follows.
 ![](https://i.gyazo.com/f60801f4c59567e490a4d0b137f8c29a.png)   
 
 3. Implement automated unit tests using the test cases above.   
+first test results with the following code gave these results.   
+![](https://i.gyazo.com/1aa06df757d51bcc8328ed02cafcb4ac.png)   
+test code looks as follows.   
+![](https://i.gyazo.com/4fff5913381631bd4025253116a4e612.png)   
+![](https://i.gyazo.com/1972f9b69948409e7456828837da8c45.png)   
+
 4. Detect, locate (and document) and fix as many errors as possible in the class.   
 a. Define (more) relevant test cases applying black box and white box techniques   
 b. Use xUnit to implement and run the same tests cases again after fixing   

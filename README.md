@@ -62,6 +62,31 @@ return list[index - 1];
 ```
 have solved the issue currently.   
 
+the next test is much larger as shown below.   
+![](https://i.gyazo.com/319ec1b43c337b8f72dd184d6471a0fb.png)   
+it fails already on the add function call, looking at the code shown below.   
+![](https://i.gyazo.com/24856de76b0b94da22bdc5736fcdcdc7.png)   
+our intend is to insert a object on index position 2, and the error from the test shows this.   
+![](https://i.gyazo.com/ca06eff51b73985a41fea3c99962068b.png)   
+which following into the code we can see the following if statement is responsible for the error.   
+```
+if (index < 0 || nextFree < index)
+                throw new IndexOutOfRangeException("Error (add): Invalid index" +
+               index);
+```
+the issue seems to be that the var nextFree is 0 and since 0 < 2 the exception is thrown, question is if this is a correct error or a false positiv is yet to be known. and from futher analyses it can be concluded the code features by my personal opinion a very weird index system, using a array of objects but using a int to know how many actual index items there is.   
+by changing the index addition from 2 to 0 to follow this index system, we stumple upon the next issue.   
+```
+            Assert.True(array.size() == size);
+```
+at this line in the test code we expect the size to be 1, since 1 element have been inserted, judging from the code and in reference to the earlier add function it can be seen the code doesn't call
+```
+nextFree++;
+```
+which seems to be the systems way of indexing it's objects.   
+by adding this in the end of the function seems to do as it's suppose to, further chain testing is noted as required for later verification.   
+
+
 a. Define (more) relevant test cases applying black box and white box techniques   
 b. Use xUnit to implement and run the same tests cases again after fixing   
 c. Study the implementation (code)   

@@ -37,7 +37,8 @@ this paper is the response to the assignment in the test cause stated [here](htt
 Bonus state table looks as follows.   
 ![](https://i.gyazo.com/7f374133d32e31073ce59958e678fc02.png)
 
-2. Derive test cases from the state diagram.   
+2. table looks like this.   
+![](https://i.gyazo.com/6c845d746f41e283dda8541aa998e392.png)
 3. Implement automated unit tests using the test cases above.   
 4. Detect, locate (and document) and fix as many errors as possible in the class.   
 a. Define (more) relevant test cases applying black box and white box techniques   

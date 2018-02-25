@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 */
 namespace TestEX3_KFS
 {
-    class MyArrayListWithBugs
+    public class MyArrayListWithBugs
     {
         private Object[] list;
         int nextFree;
@@ -48,7 +48,7 @@ namespace TestEX3_KFS
                 throw new IndexOutOfRangeException("Error (get): Invalid index" +
                index);
 
-            return list[index];
+            return list[index - 1];
         }
 
         // Inserts object at position index
@@ -71,6 +71,7 @@ namespace TestEX3_KFS
             }
 
             list[index] = o;
+            nextFree++;
         }
 
         // Removes object at position index
@@ -78,7 +79,7 @@ namespace TestEX3_KFS
         // Throws IndexOutOfBoundsException
         public Object remove(int index)
         {
-            if (index < 0 || nextFree <= index)
+            if (index < 0 || nextFree < index)
                 throw new IndexOutOfRangeException("Error (remove): Invalid index"
                + index);
 

@@ -29,3 +29,6 @@ C:\Users\Animc\Desktop\Repos\TestEX3-KFS\TestEX3-KFS\XUnitTestProject1\obj\Debug
 C:\Users\Animc\Desktop\Repos\TestEX3-KFS\TestEX3-KFS\XUnitTestProject1\obj\Debug\netcoreapp2.0\XUnitTestProject1.AssemblyInfo.cs
 C:\Users\Animc\Desktop\Repos\TestEX3-KFS\TestEX3-KFS\XUnitTestProject1\obj\Debug\netcoreapp2.0\XUnitTestProject1.dll
 C:\Users\Animc\Desktop\Repos\TestEX3-KFS\TestEX3-KFS\XUnitTestProject1\obj\Debug\netcoreapp2.0\XUnitTestProject1.pdb
+C:\Users\Retro\Git\TestEX3-KFS\TestEX3-KFS\XUnitTestProject1\bin\Debug\netcoreapp2.0\XUnitTestProject1.pdb
+C:\Users\Retro\Git\TestEX3-KFS\TestEX3-KFS\XUnitTestProject1\obj\Debug\netcoreapp2.0\XUnitTestProject1.dll
+C:\Users\Retro\Git\TestEX3-KFS\TestEX3-KFS\XUnitTestProject1\obj\Debug\netcoreapp2.0\XUnitTestProject1.pdb

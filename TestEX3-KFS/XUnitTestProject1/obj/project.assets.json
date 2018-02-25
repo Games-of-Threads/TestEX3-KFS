@@ -5768,7 +5768,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Animc\\.nuget\\packages\\": {},
+    "C:\\Users\\Retro\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
@@ -5778,18 +5778,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Animc\\Desktop\\Repos\\TestEX3-KFS\\TestEX3-KFS\\XUnitTestProject1\\XUnitTestProject1.csproj",
+      "projectUniqueName": "C:\\Users\\Retro\\Git\\TestEX3-KFS\\TestEX3-KFS\\XUnitTestProject1\\XUnitTestProject1.csproj",
       "projectName": "XUnitTestProject1",
-      "projectPath": "C:\\Users\\Animc\\Desktop\\Repos\\TestEX3-KFS\\TestEX3-KFS\\XUnitTestProject1\\XUnitTestProject1.csproj",
-      "packagesPath": "C:\\Users\\Animc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Animc\\Desktop\\Repos\\TestEX3-KFS\\TestEX3-KFS\\XUnitTestProject1\\obj\\",
+      "projectPath": "C:\\Users\\Retro\\Git\\TestEX3-KFS\\TestEX3-KFS\\XUnitTestProject1\\XUnitTestProject1.csproj",
+      "packagesPath": "C:\\Users\\Retro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Retro\\Git\\TestEX3-KFS\\TestEX3-KFS\\XUnitTestProject1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Animc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Retro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -5803,8 +5803,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Animc\\Desktop\\Repos\\TestEX3-KFS\\TestEX3-KFS\\TestEX3-KFS\\TestEX3-KFS.csproj": {
-              "projectPath": "C:\\Users\\Animc\\Desktop\\Repos\\TestEX3-KFS\\TestEX3-KFS\\TestEX3-KFS\\TestEX3-KFS.csproj"
+            "C:\\Users\\Retro\\Git\\TestEX3-KFS\\TestEX3-KFS\\TestEX3-KFS\\TestEX3-KFS.csproj": {
+              "projectPath": "C:\\Users\\Retro\\Git\\TestEX3-KFS\\TestEX3-KFS\\TestEX3-KFS\\TestEX3-KFS.csproj"
             }
           }
         }
@@ -5823,7 +5823,6 @@
             "version": "[15.6.0, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true

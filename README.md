@@ -86,6 +86,14 @@ nextFree++;
 which seems to be the systems way of indexing it's objects.   
 by adding this in the end of the function seems to do as it's suppose to, further chain testing is noted as required for later verification.   
 
+the last test as shown here.   
+![](https://i.gyazo.com/5be78f6b3418ffcd578afed9281e7944.png)   
+is rather troublesome as for me to develop, since asserting throw exceptions weren't working, I had to change it to a less convoluted style so it's current form is this.   
+![](https://i.gyazo.com/c7618ffaf3646d30bec2747edffc70f5.png)   
+after this modification the test shows green and thats all current testing working correctly, however from additional looks over the confusing index system, makes it clear that many there can be many more test case issues in this code, likewise remove at index havn't been tested yet so that is the next step from here.   
+![](https://i.gyazo.com/83cb16f1b8a275cf653980de2d1bf9b8.png)   
+the test goes as follows, add 3, ensure size is 3, remove third element from list, ensure size is 2, remove first element, ensure size is 1, get the remaining element and assert it's not null.
+
 
 a. Define (more) relevant test cases applying black box and white box techniques   
 b. Use xUnit to implement and run the same tests cases again after fixing   

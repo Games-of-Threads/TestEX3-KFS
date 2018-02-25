@@ -38,7 +38,7 @@ Bonus state table looks as follows.
 ![](https://i.gyazo.com/7f374133d32e31073ce59958e678fc02.png)
 
 2. table looks like this.   
-![](https://i.gyazo.com/90916e405bd8d3b66d755f90506b43d0.png)   
+![](https://i.gyazo.com/f60801f4c59567e490a4d0b137f8c29a.png)   
 
 3. Implement automated unit tests using the test cases above.   
 4. Detect, locate (and document) and fix as many errors as possible in the class.   
